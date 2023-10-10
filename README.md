@@ -1,2 +1,2 @@
 # Portfolio
-portfolio website
+Personal Website created using only HTML & HTMX
