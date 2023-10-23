@@ -6,11 +6,11 @@ const port = 8000;
 
 const app = express();
 
-app.use(express.static("/public"));
+app.use(express.static(path.join(__dirname, "public", "src")));
 
 app.get("/", (req, res) => {
   console.log(`GET request for ${req.url}`);
-  res.sendFile(__dirname + "/public/index.html");
+  res.sendFile(path.join(__dirname, "public", "src", "index.html"));
 });
 
 app.listen(port, () => {

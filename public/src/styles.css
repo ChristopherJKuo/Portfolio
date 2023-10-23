@@ -1,0 +1,41 @@
+/* Colors
+#e63946 - red
+#ffffff - white
+#F1FAEE - off white
+#a8dadc - light blue
+#457b9d - dark blue
+#1d3557 - navy blue
+*/
+
+body {
+  background-color: #ffffff;
+  color: #1d3557;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+.sidenav {
+  height: 100%;
+  width: 240px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #1d3557;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding: 20px;
+  color: #f1faee;
+  text-align: center;
+}
+.navtitle {
+  display: block;
+  padding: 1rem 0;
+  font-size: 2.5rem;
+}
+.navtext {
+  display: block;
+  padding: 1rem 0;
+}
+.content {
+  margin-left: 280px; /* Same as the width of the sidenav */
+}
