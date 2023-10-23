@@ -3,8 +3,8 @@
 #ffffff - white
 #F1FAEE - off white
 #a8dadc - light blue
-#457b9d - dark blue
-#1d3557 - navy blue
+#457b9d - dark blue 
+#1d3557 - navy blue default base color
 */
 
 body {
@@ -27,14 +27,31 @@ body {
   color: #f1faee;
   text-align: center;
 }
-.navtitle {
+.nav-title {
   display: block;
   padding: 1rem 0;
   font-size: 2.5rem;
 }
-.navtext {
+.nav-link {
   display: block;
   padding: 1rem 0;
+  margin: 10px 0;
+}
+.nav-link:hover {
+  cursor: pointer;
+}
+.inactive-nav {
+  box-shadow: inset 0 0 0 0 #1d3557;
+  border: 1px #1d3557;
+  border-radius: 10px;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.inactive-nav:hover {
+  box-shadow: inset 280px 0 0 0 #f1faee;
+  color: #1d3557;
+}
+.nav-selected {
+  color: #e63946;
 }
 .content {
   margin-left: 280px; /* Same as the width of the sidenav */

@@ -8,13 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <div class="sidenav">
-      <a class="navtitle">Christopher Kuo</a>
-      <a class="navtext">Projects</a>
-      <a class="navtext">Resume</a>
-    </div>
-    <div class="content">
-      <h1>HELLO WORLD</h1>
+    <div id="nav-and-content">
+      <div class="sidenav">
+        <a class="nav-title">Christopher Kuo</a>
+        <a class="nav-link nav-selected" hx-get="/" hx-target="#nav-and-content">Home</a>
+        <a class="nav-link inactive-nav" hx-get="/projects" hx-target="#nav-and-content">Projects</a>
+        <a class="nav-link inactive-nav" hx-get="/Resume" hx-target="#nav-and-content">Resume</a>
+      </div>
+      <div class="content">
+        <h1>HELLO WORLD</h1>
+      </div>
     </div>
   </body>
 </html>
